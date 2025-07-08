@@ -7,8 +7,8 @@
         "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
         "C_Cpp.default.cppStandard": "c++14",
         "C_Cpp.default.cStandard": "c11",
-        "C_Cpp.formatting": "Disabled",
-        "C_Cpp.intelliSenseEngine": "Default",
+        "C_Cpp.formatting": "disabled",
+        "C_Cpp.intelliSenseEngine": "default",
         "C_Cpp.vcpkg.enabled": false,
         "C_Cpp.workspaceParsingPriority": "low",
         "cmake.buildBeforeRun": true,
@@ -37,7 +37,7 @@
         "editor.suggest.localityBonus": true,
         "editor.tabSize": 8,
         "editor.wordWrapColumn": 120,
-        "explorer.openEditors.visible": 0,
+        "explorer.openEditors.visible": 1,
         "files.insertFinalNewline": true,
         "files.trimTrailingWhitespace": true,
         "files.watcherExclude": {
@@ -129,4 +129,19 @@
         "yaml.schemas": {
                 "${workspaceFolder}/validation/module_schema.yaml": "${workspaceFolder}/src/modules/*/module.yaml"
         },
+        "python.autoComplete.extraPaths": [
+                "/home/aubrey/ardu_ws/install/ardupilot_dds_tests/lib/python3.10/site-packages",
+                "/home/aubrey/ardu_ws/install/ardupilot_sitl/local/lib/python3.10/dist-packages",
+                "/home/aubrey/ardu_ws/install/ardupilot_msgs/local/lib/python3.10/dist-packages",
+                "/opt/ros/humble/lib/python3.10/site-packages",
+                "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ],
+        "python.analysis.extraPaths": [
+                "/home/aubrey/ardu_ws/install/ardupilot_dds_tests/lib/python3.10/site-packages",
+                "/home/aubrey/ardu_ws/install/ardupilot_sitl/local/lib/python3.10/dist-packages",
+                "/home/aubrey/ardu_ws/install/ardupilot_msgs/local/lib/python3.10/dist-packages",
+                "/opt/ros/humble/lib/python3.10/site-packages",
+                "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ],
+        "ros.distro": "humble"
 }
