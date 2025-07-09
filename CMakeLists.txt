@@ -98,7 +98,7 @@
 #	evaluating to false.
 #
 #=============================================================================
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
 set(PX4_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}" CACHE FILEPATH "PX4 source directory" FORCE)
