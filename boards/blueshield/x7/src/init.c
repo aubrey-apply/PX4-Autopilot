@@ -211,7 +211,6 @@ __EXPORT int board_app_initialize(uintptr_t arg)
 	if (mmcsd_slotinitialize(0, sdio_dev) != OK) {
 		syslog(LOG_ERR, "[boot] Failed to bind SDIO to the MMC/SD driver\n");
 	}
-
 	/* Assume that the SD card is inserted.  What choice do we have? */
 	sdio_mediachange(sdio_dev, true);
 #endif /* CONFIG_MMCSD */
