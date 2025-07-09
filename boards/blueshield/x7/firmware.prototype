@@ -1,10 +1,10 @@
 {
     "board_id": 1010,
     "magic": "PX4FWv1",
-    "description": "Firmware for the CUAV X7Pro board",
+    "description": "Firmware for the LanDun X7 board",
     "image": "",
     "build_time": 0,
-    "summary": "X7Pro",
+    "summary": "LDx7",
     "version": "0.1",
     "image_size": 0,
     "image_maxsize": 1966080,
