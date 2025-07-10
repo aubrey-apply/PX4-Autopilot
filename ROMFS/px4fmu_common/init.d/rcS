@@ -87,6 +87,7 @@ then
 		fi
 	fi
 else
+	echo "ERROR [init] no microSD card found (/dev/mmcsd0)"
 	# Is there a device mounted for storage
 	if mft query -q -k MTD -s MTD_PARAMETERS -v /mnt/microsd
 	then
