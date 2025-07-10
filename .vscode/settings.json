@@ -129,20 +129,6 @@
         "yaml.schemas": {
                 "${workspaceFolder}/validation/module_schema.yaml": "${workspaceFolder}/src/modules/*/module.yaml"
         },
-        "python.autoComplete.extraPaths": [
-                "/home/aubrey/ardu_ws/install/ardupilot_dds_tests/lib/python3.10/site-packages",
-                "/home/aubrey/ardu_ws/install/ardupilot_sitl/local/lib/python3.10/dist-packages",
-                "/home/aubrey/ardu_ws/install/ardupilot_msgs/local/lib/python3.10/dist-packages",
-                "/opt/ros/humble/lib/python3.10/site-packages",
-                "/opt/ros/humble/local/lib/python3.10/dist-packages"
-        ],
-        "python.analysis.extraPaths": [
-                "/home/aubrey/ardu_ws/install/ardupilot_dds_tests/lib/python3.10/site-packages",
-                "/home/aubrey/ardu_ws/install/ardupilot_sitl/local/lib/python3.10/dist-packages",
-                "/home/aubrey/ardu_ws/install/ardupilot_msgs/local/lib/python3.10/dist-packages",
-                "/opt/ros/humble/lib/python3.10/site-packages",
-                "/opt/ros/humble/local/lib/python3.10/dist-packages"
-        ],
         // 指定 clangd 可执行路径（如果不是系统默认）
         "clangd.path": "/usr/bin/clangd",
 
@@ -158,6 +144,5 @@
         "${workspaceFolder}/build/blueshield_x7_default",
         "${workspaceFolder}/src",
         "${workspaceFolder}/src/modules"
-        ],
-        "ros.distro": "humble"
+        ]
 }
