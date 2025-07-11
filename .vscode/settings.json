@@ -8,7 +8,7 @@
         "C_Cpp.default.cppStandard": "c++14",
         "C_Cpp.default.cStandard": "c11",
         "C_Cpp.formatting": "disabled",
-        "C_Cpp.intelliSenseEngine": "default",
+        "C_Cpp.intelliSenseEngine": "disabled",
         "C_Cpp.vcpkg.enabled": false,
         "C_Cpp.workspaceParsingPriority": "low",
         "cmake.buildBeforeRun": true,
@@ -143,5 +143,21 @@
                 "/opt/ros/humble/lib/python3.10/site-packages",
                 "/opt/ros/humble/local/lib/python3.10/dist-packages"
         ],
-        "ros.distro": "humble"
+        "ros.distro": "humble",
+            // 指定 clangd 可执行路径（如果不是系统默认）
+        "clangd.path": "/usr/bin/clangd",
+
+        // 指向编译数据库目录
+        "clangd.arguments": [
+                "--compile-commands-dir=build/px4_sitl_default",
+                "--background-index",         // 开启后台索引
+                "--clang-tidy"                // 如果需要启用 clang-tidy 检查
+        ],
+
+        // 可选：让 VS Code 也 smart 识别 px4 的头文件
+        "C_Cpp.default.includePath": [
+        "${workspaceFolder}/build/px4_sitl_default",
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/src/modules"
+        ]
 }
